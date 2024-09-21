@@ -1,6 +1,6 @@
 import {useBackground} from "./usebackground.js"
 import { useTheme } from "./usetheme.js";
-import { useTextAnimation } from "./useTextAnimation.js";
+import { useTextAnimation } from "./usetextanimation.js";
 
 const bg = useBackground();
 const theme = useTheme()
