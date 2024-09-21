@@ -23,11 +23,14 @@ const toogleMenu = ()=>{
 
 const checkMenu = ()=>{
     const pathName = location.pathname
+    if(pathName === '/') {
+        const el  = Array.from(menuItemElements).find(e => e.querySelector("a")?.href.includes('/index.html'))
+        el?.classList.add("is-active")
+        return ;
+    }
     Array.from(menuItemElements).forEach(element => {
         if(element.querySelector("a").href.includes(pathName)){
             element.classList.add("is-active")
-        }else {
-            element.classList.remove("is-active")
         }
     });
 }
