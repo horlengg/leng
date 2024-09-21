@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>Service</title>
+    <link rel="shortcut icon" href="/images/cycle-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="dark">
+    <header class="app-header">
+      <div>
+        <button class="btn-bugar" id="btn-toogle-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="app-menu" class="app-menu">
+        <h2>Ly Houleng</h2>
+        <ul>
+          <li class="app-menu_item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/service.html">Service</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/project.html">Projects</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/aboute.html">About</a>
+          </li>
+          <!-- <li class="app-menu_item">
+            <a href="/contact.html">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="app-menu_overlay" id="menu-overlay"></div>
+      <button class="btn-switch-theme" id="btn-change-them">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 3.086l7.414 7.414H2v-2h15.586l-4-4zM22 13.5v2H6.414l4 4L9 20.914L1.586 13.5z"/></svg>
+        <div class="theme-mode-wrapper">
+          <span id="theme-mode-list" class="theme-mode-list">
+            <span class="dark">Dark</span>
+            <span class="light">Light</span>
+          </span>
+        </div>
+      </button>
+    </header>
+
+    <main class="app-container">
+        <section id="project-demo">
+            <div class="service_left-layout">
+                <div data-aos="fade-down" data-aos-duration="1500">
+                    <h2 class="text-typing" data-typing-duration="1000">Welcome to</h2>
+                    <h3 class="text-typing mt-1" data-typing-duration="1000" data-typing-delay="1000">My Project Showcase!</h3>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="2000">
+                        As a passionate and experienced web developer, 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="2500">
+                        I believe in turning ideas into reality through powerful, 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="3000">
+                        user-friendly, and scalable solutions. 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="3500">
+                        This page is dedicated to showcasing some of my best work, 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="4000">
+                        each project reflecting the unique challenges and solutions 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="4500">
+                        that I’ve developed for clients across various industries. 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="5000">
+                        Whether it's a custom web app, API integration, or an 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="5500">
+                        eCommerce platform, my focus is on creating impactful 
+                    </p>
+                    <p  class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="6000">
+                        digital experiences that drive results.
+                    </p>
+                </div>
+                <div class="mt-5 btn-more-wrapper">
+                    <a href="#project-demo-list">
+                        <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
+                            Learn More
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="service_right-layout">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <img src="/images/project.svg" alt="dev">
+                </div>
+                <div class="mt-5 btn-more-wrapper">
+                  <a href="#service-doc">
+                      <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
+                          Learn More
+                      </button>
+                  </a>
+              </div>
+            </div>
+        </section>
+
+        <section id="project-demo-list">
+            <h3 data-aos="zoom-in" data-aos-duration="1000" class="mt-2" style="text-align: center;">
+                Explore the Innovation Behind Every Project
+            </h3>
+            <div class="mt-5">
+                <!-- chat app -->
+                <div class="box-layout-auto">
+                    <div class="image-warpper" data-aos="fade-up" data-aos-duration="500">
+                        <img src="/images/chat-project.svg" alt="">
+                    </div>
+                    <div class="detail">
+                        <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Chat Web Application</h4>
+                        <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                            This project is a feature-rich Real-Time Chat Web Application designed to offer seamless, instant communication between users. Built with cutting-edge technology, the application provides an intuitive interface where users can send and receive messages instantly without any delay. The app supports multiple conversations, group chats, and file sharing, making it perfect for personal, team, or business communication.
+                        </p>
+                        <div class="mt-5 view-demo-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                            <a href="https://kh-chat.vercel.app/" target="_blank" class="page-button">
+                                <span>Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- TVKH -->
+                <div class="box-layout-auto">
+                    <div class="image-warpper" data-aos="fade-up" data-aos-duration="500">
+                        <img src="/images/movie.svg" alt="">
+                    </div>
+                    <div class="detail">
+                        <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-delay="500">TVKH</h4>
+                        <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                            Discover a world of movies at your fingertips! Our platform brings you an extensive collection of films, from the latest blockbuster hits to timeless classics. Whether you’re looking for reviews, trailers, or recommendations, we’ve got you covered. Explore by genre, release date, or personal preferences, and build your watchlist with ease. With real-time updates, ratings, and streaming availability, TVKH makes it easier than ever to find your next favorite movie.
+                        </p>
+                        <div class="mt-5 view-demo-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                            <a href="https://tvkh.vercel.app/" target="_blank" class="page-button">
+                                <span>Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    </main>
+
+    <footer class="app-footer">
+      <p  data-aos="fade-up" data-aos-duration="1000">Did you want to continue to explore more?</p>
+      <div class="btn-page-wrapper">
+        <a href="/service.html" class="page-button prev-page-button" data-aos="fade-right" data-aos-duration="1500">
+          <span>Service</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+        </a>
+        <a href="/aboute.html" class="page-button next-page-button" data-aos="fade-left" data-aos-duration="1500">
+          <span>About</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js" type="module"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

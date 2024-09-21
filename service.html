@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>Service</title>
+    <link rel="shortcut icon" href="/images/cycle-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="dark">
+    <header class="app-header">
+      <div>
+        <button class="btn-bugar" id="btn-toogle-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="app-menu" class="app-menu">
+        <h2>Ly Houleng</h2>
+        <ul>
+          <li class="app-menu_item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/service.html">Service</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/project.html">Projects</a>
+          </li>
+          <li class="app-menu_item">
+            <a href="/aboute.html">About</a>
+          </li>
+          <!-- <li class="app-menu_item">
+            <a href="/contact.html">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="app-menu_overlay" id="menu-overlay"></div>
+      <button class="btn-switch-theme" id="btn-change-them">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 3.086l7.414 7.414H2v-2h15.586l-4-4zM22 13.5v2H6.414l4 4L9 20.914L1.586 13.5z"/></svg>
+        <div class="theme-mode-wrapper">
+          <span id="theme-mode-list" class="theme-mode-list">
+            <span class="dark">Dark</span>
+            <span class="light">Light</span>
+          </span>
+        </div>
+      </button>
+    </header>
+
+    <main class="app-container">
+        <section id="service">
+            <div class="service_left-layout">
+                <div>
+                    <h2 class="text-typing" data-typing-duration="500">Customer</h2>
+                    <h3 class="text-typing mt-1" data-typing-duration="500" data-typing-delay="500">Service</h3>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="1000" >
+                        As a dedicated freelance developer, 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="1500" >
+                        I provide tailored, high-quality web 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="2000" >
+                        and software development solutions 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="2500" >
+                        designed to meet your unique needs.  
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="3000" >
+                        Whether you're a startup, small business, 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="3500" >
+                        or enterprise, I specialize in crafting 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="4000" >
+                        scalable, efficient, 
+                    </p>
+                    <p class="text-typing text-sm mt-2" data-typing-duration="500" data-typing-delay="4500" >
+                        and robust systems that help drive your success.
+                    </p>
+                </div>
+                <div class="mt-5 btn-more-wrapper">
+                    <a href="#service-doc">
+                        <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
+                            Learn More
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="service_right-layout">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <img src="/images/dev-cs.svg" alt="dev">
+                </div>
+                <div class="mt-5 btn-more-wrapper">
+                  <a href="#service-doc">
+                      <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
+                          Learn More
+                      </button>
+                  </a>
+              </div>
+            </div>
+        </section>
+
+        <section id="service-doc">
+            <h3 data-aos="zoom-in" data-aos-duration="1000" class="mt-2" style="text-align: center;">Feature</h3>
+            <h3 data-aos="zoom-in" data-aos-duration="1000" class="mt-2" style="text-align: center;">Our Feature & Service</h3>
+            <div class="list-service-card mt-5">
+                <div class="s-card"  data-aos="fade-up" data-aos-duration="1500">
+                    <div class="s-card_image">
+                        <img src="/images/website.svg" alt="">
+                    </div>
+                    <h5 class="s-card_title">
+                        Build Website
+                    </h5>
+                    <p class="s-card_des">
+                      Create fully tailored websites using HTML, CSS, JavaScript, JAVA, or other relevant languages.
+                    </p>
+                </div>
+                <div class="s-card"  data-aos="fade-up" data-aos-duration="1500">
+                    <div class="s-card_image">
+                        <img src="/images/design-tool.svg" alt="">
+                    </div>
+                    <h5 class="s-card_title">
+                        UI/UX Design
+                    </h5>
+                    <p class="s-card_des">
+                      Design visually appealing and user-friendly interfaces with a focus on the user experience.
+                    </p>
+                </div>
+                <div class="s-card"  data-aos="fade-up" data-aos-duration="1500">
+                    <div class="s-card_image">
+                        <img src="/images/mobile.svg" alt="">
+                    </div>
+                    <h5 class="s-card_title">
+                        API Services
+                    </h5>
+                    <p class="s-card_des">
+                      I design and develop RESTful and GraphQL APIs that are secure, scalable, and well-documented.
+                    </p>
+                </div>
+                <div class="s-card"  data-aos="fade-up" data-aos-duration="1500">
+                    <div class="s-card_image">
+                        <img src="/images/vue-laravel.svg" alt="">
+                    </div>
+                    <h5 class="s-card_title">
+                      API Integration
+                    </h5>
+                    <p class="s-card_des">
+                      Seamlessly connect your application with external services (like payment gateways, social media platforms, CRMs, etc.) for smooth data flow and functionality.
+                    </p>
+                </div>
+            </div>
+        </section>
+      
+    </main>
+
+    <footer class="app-footer">
+      <p  data-aos="fade-up" data-aos-duration="1000">Did you want to continue to explore more?</p>
+      <div class="btn-page-wrapper">
+        <a href="/index.html" class="page-button prev-page-button" data-aos="fade-right" data-aos-duration="1500">
+          <span>Home</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+        </a>
+        <a href="/project.html" class="page-button next-page-button" data-aos="fade-left" data-aos-duration="1500">
+          <span>Project</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js" type="module"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
