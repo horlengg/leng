@@ -54,6 +54,7 @@ body {
     color: var(--text-color);
     background-color: var(--layout-color);
     transition: background-color .5s ease;
+    font-size: 14px;
     // background-image: url("https://pbs.twimg.com/media/FyXLTo0XwAUepJq.jpg:large");
     &::-webkit-scrollbar {
         display: none;
@@ -178,8 +179,10 @@ body {
 
 
 .app-container {
-    padding: 80px;
-    margin: 0 100px;
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
     overflow-x: hidden;
     &::-webkit-scrollbar {
         display: none;
@@ -225,9 +228,6 @@ body {
             img {
                 width: 100%;
             }
-            .btn-more-wrapper {
-                display: none;
-            }
         }
     }
     #project-demo-list,
@@ -271,14 +271,62 @@ body {
     #education {
         margin-top: 200px;
     }
+    #skill {
+        display: flex;
+        align-items: center;
+        min-height: 90vh;
+        .left,.right {
+            flex: 1;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 90%;
+            }
+        }
+    }
+    #skillDemo {
+        margin-top: 10rem;
+        .title {
+            text-align: center;
+            color: orange;
+        }
+        .skill-demo-list {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 100px 50px ;
+            .skill-card {
+                overflow: hidden;
+                padding: 20px;
+                .skill-card_image {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 100px;
+                    }
+                }
+                .skill-card_title {
+                    h5 {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 .app-footer {
     padding: 70px 0;
-    margin: 0 100px;
     overflow-x: hidden;
     p {
         text-align: center;
-        margin-top: 40px;
     }
     .btn-page-wrapper {
         margin : 40px 0;
@@ -299,8 +347,10 @@ a.page-button {
     gap: 10px;
     color: #FFF;
     background-color: orange;
-    letter-spacing: 1px;
-    font-size: 14px;
+    letter-spacing: 0.165em;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
     &.prev-page-button {
         flex-direction: row-reverse;
         svg {
@@ -317,12 +367,14 @@ button {
         min-height: 35px;
         padding: 0 10px;
         border-radius: 5px;
-        &.learn-more {
-            border-radius: 20px;
-            min-width: 100px;
-            background-color: orange;
-            color: #FFF;
-        }
+        letter-spacing: 0.165em;
+        font-size: 10px;
+        border-radius: 20px;
+        min-width: 120px;
+        background-color: orange;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 }
 
@@ -599,13 +651,10 @@ h6 {
                 padding-left: 20px;
                 position: relative;
                 color: orange;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    border-top: 1px solid orange;
-                    width: 85%;
-                    bottom: -5px;
-                }
+                letter-spacing: 0.165em;
+                font-size: 25px;
+                font-weight: 800;
+                text-transform: uppercase;
             }
             ul {
                 margin-top: 40px;
@@ -631,13 +680,7 @@ h6 {
             }
         }
     }
-    .app-footer {
-        margin: 100px 0;
-        padding: 50px 20px;
-    }
     .app-container {
-        margin: 100px 0;
-        padding: 10px;
         #home {
             flex-direction: column-reverse;
             gap: 50px;
@@ -654,16 +697,6 @@ h6 {
         #service {
             width: 100%;
             flex-direction: column;
-            .service_left-layout {
-                .btn-more-wrapper {
-                    display: none;
-                }
-            }
-            .service_right-layout {
-                .btn-more-wrapper {
-                    display: block;
-                }
-            }
         }
         #service-doc {
             .list-service-card {
@@ -700,5 +733,14 @@ h6 {
     }
     #w-experience h2 {
         text-align: center;
+    }
+    #skill {
+        flex-direction: column;
+        gap: 50px;
+    }
+    #skillDemo {
+        .skill-demo-list {
+            grid-template-columns: 1fr !important;
+        }
     }
 }

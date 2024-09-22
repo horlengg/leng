@@ -18,8 +18,6 @@ export function useTextAnimation() {
       const animationDelay = e.getAttribute('data-typing-delay') ?? '0'
       const animationDuration = e.getAttribute("data-typing-duration") ?? '3000'
       e.setAttribute("data-id", randomID);
-      console.log(e.classList);
-      
       t += `  
             .text-typing[data-id=${randomID}]:before {  
                 animation : __typing ${animationDuration}ms steps(${e.textContent.length}) ${animationDelay}ms ${animationIterationCount};  

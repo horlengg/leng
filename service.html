@@ -39,6 +39,9 @@
             <a href="/project.html">Projects</a>
           </li>
           <li class="app-menu_item">
+            <a href="/skill.html">Skills</a>
+          </li>
+          <li class="app-menu_item">
             <a href="/aboute.html">About</a>
           </li>
           <!-- <li class="app-menu_item">
@@ -91,7 +94,7 @@
                 </div>
                 <div class="mt-5 btn-more-wrapper">
                     <a href="#service-doc">
-                        <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
+                        <button class="simple-button learn-more" data-aos="fade-down" data-aos-duration="1500">
                             Learn More
                         </button>
                     </a>
@@ -101,13 +104,6 @@
                 <div data-aos="fade-up" data-aos-duration="1500">
                     <img src="/images/dev-cs.svg" alt="dev">
                 </div>
-                <div class="mt-5 btn-more-wrapper">
-                  <a href="#service-doc">
-                      <button class="simple-button learn-more" data-aos="fade-right" data-aos-duration="1500">
-                          Learn More
-                      </button>
-                  </a>
-              </div>
             </div>
         </section>
 
@@ -181,7 +177,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js" type="module"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset : 0
+      });
     </script>
   </body>
 </html>
